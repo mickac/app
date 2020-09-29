@@ -1,10 +1,14 @@
 import React from "react"
 
-import Checkboxes from "./components/Checkboxes"
+import Checkbox from "./components/Checkbox"
 
 function App(){
     return(
-        <Checkboxes />
+        <div className="todo-list">
+            <Checkbox />
+            <Checkbox />
+            <Checkbox />
+        </div>
     )
 }
 
