@@ -1,9 +1,12 @@
 import React from "react"
 
-import jokesData from "./jokesData"
-import Joke from "./components/Joke"
+//import jokesData from "./data/jokesData"
+//import Joke from "./components/Joke"
+import vschoolProducts from "./data/vschoolProducts"
+import Product from "./components/Product"
 
 function Promps(){
+    /*
     const jokeComponents = jokesData.map(joke => 
         <Joke 
             key = {joke.id}
@@ -12,13 +15,28 @@ function Promps(){
             punchLine = {joke.punchLine} 
         />
     )
+    */
+    const productComponents = vschoolProducts.map(product =>
+        <Product 
+        key = {product.id}
+        name = {product.name}
+        price = {product.price}
+        description = {product.description}
+        />
+    )
+
+
 
     return(
-        <div>
+        <div className="products">
+            {productComponents}
+        </div>
+
+        /*<div>
             {jokeComponents}
         </div>
 
-        /*<div className="jokes">
+        <div className="jokes">
             <Joke
                 content = {{question: "You moron", punchLine: ":)"}}
             />
