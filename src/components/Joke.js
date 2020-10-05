@@ -1,17 +1,19 @@
 import React from "react"
 
 function Joke(props){
-    if(!props.content.question){
-        props.content.question = "Now you see me..."
-        props.content.punchLine = "... Now you don't."
+    var question = props.question
+    var punchLine = props.punchLine
+    if(!question){
+        question = "Now you see me..."
+        punchLine = "... Now you don't."
     }
 
     return(
         <div className="joke">
-            <h2>Question:</h2>
-            <p>{props.content.question}</p>
+            <h2>{props.id}.Question:</h2>
+            <p>{question}</p>
             <h2>Punchline:</h2>
-            <p>{props.content.punchLine}</p>
+            <p>{punchLine}</p>
         </div>
     )
 }
