@@ -1,33 +1,24 @@
 import React from "react"
 
-import ContactCard from "./components/ContactCard"
+import Joke from "./components/Joke"
 
 function Promps(){
     return(
-        <div className="contacts">
-            <ContactCard 
-                contact = {{name: "Michał Kaczyński", number: "123", email :"example@example.com"}}
-                //name="Michał Kaczyński" 
-                //number="123" 
-                //email="example@example.com"
+        <div className="jokes">
+            <Joke
+                content = {{question: "You moron", punchLine: ":)"}}
             />
-            <ContactCard 
-                contact = {{name: "Zdzisław Kaczyński", number: "456", email :"example@example.com"}}
-                //name="Zdzisław Kaczyński" 
-                //number="456" 
-                //email="example@example.com"
+            <Joke
+                content = {{question: "", punchLine: ""}}
             />
-            <ContactCard 
-                contact = {{name: "Bogdan Kaczyński", number: "789", email :"example@example.com"}}
-                //name="Bogdan Kaczyński" 
-                //number="789" 
-                //email="example@example.com"
+            <Joke
+                content = {{question: "", punchLine: ""}}
             />
-            <ContactCard 
-                contact = {{name: "Wezuwiusz Kaczyński", number: "145", email :"example@example.com"}}
-                //name="Wezuwiusz Kaczyński" 
-                //number="145" 
-                //email="example@example.com"
+            <Joke
+                content = {{question: "Test2", punchLine: "EZ Clap"}}
+            />
+            <Joke
+                content = {{question: "", punchLine: ""}}
             />
         </div>
     )
