@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import App from "./App"
+import Promps from "./Promps"
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<Promps />, document.getElementById("root"))
