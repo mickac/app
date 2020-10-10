@@ -4,6 +4,7 @@ import ReactDOM from "react-dom"
 //import Promps from "./Promps"
 //import AppClasses from "./AppClasses"
 //import AppState from "./AppState"
+import AppEvents from "./AppEvents"
 import App from "./App"
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<AppEvents />, document.getElementById("root"))
